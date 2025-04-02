@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import logo from "./assets/logo.jpg"; // Import your logo image
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,8 +39,9 @@ const Navbar = () => {
             <nav className="bg-green-800 text-white shadow-lg sticky top-0 z-50">
                 <div className="container mx-auto px-4 py-5 flex justify-between items-center">
                     <div className="flex items-center space-x-2">
-                        <i className="fas fa-mosque text-2xl"></i>
-                        <a href="/" className="text-xl font-bold">Srafa-Immuna Islamic Basic School</a>
+                        {/* <i className="fas fa-mosque text-2xl"></i> */}
+                        <img src={logo} className='h-12 w-12 rounded-full object-cover' alt="logo" />
+                        <a href="/" className="text-xl font-bold">Srafa-Immuna Islamic</a>
                     </div>
 
                     {/* Mobile menu button */}
@@ -56,7 +57,6 @@ const Navbar = () => {
                     <div className="hidden md:flex space-x-6">
                         <a href="/" className="hover:text-green-200 font-medium">Home</a>
                         <a href="/about" className="hover:text-green-200 font-medium">About</a>
-                        {/* <a href="/admission" className="hover:text-green-200 font-medium">Admission</a> */}
                         <a href="/gallery" className="hover:text-green-200 font-medium">Gallery</a>
                         <a href="/contact" className="hover:text-green-200 font-medium">Contact</a>
                         <a href="/admission" className="bg-white text-green-800 px-4 py-1 rounded hover:bg-green-100 font-medium">Admission</a>

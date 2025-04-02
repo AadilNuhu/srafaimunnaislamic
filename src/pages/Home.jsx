@@ -8,6 +8,7 @@ const Home = () => {
             <header class="relative bg-green-700 text-white">
                 <div class="container mx-auto px-4 py-20 md:py-28 flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-10 md:mb-0">
+                        <p className='text-2xl px-2 font-bold text-gray-300 '>Welcome to Srafa Immuna Islamic Basic School</p>
                         <h1 class="text-4xl md:text-5xl font-bold mb-4">Quality Islamic Education</h1>
                         <p class="text-xl mb-6">Nurturing young minds with academic excellence and Islamic values since 2003.</p>
                         <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
